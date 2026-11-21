@@ -2,7 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #0f172a;
 }
 
 @theme inline {
@@ -12,15 +12,99 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
+  margin: 0;
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Arial, sans-serif;
+}
+
+button,
+a,
+input,
+select,
+textarea {
+  transition-property: color, background-color, border-color, opacity;
+  transition-duration: 160ms;
+}
+
+button,
+select {
+  cursor: pointer;
+}
+
+.admin-dashboard input:not([type="checkbox"]):not([type="file"]),
+.admin-dashboard select,
+.admin-dashboard textarea {
+  min-height: 42px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #0f172a;
+  box-shadow: 0 1px 2px rgb(15 23 42 / 0.04);
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.admin-dashboard input:not([type="checkbox"]):not([type="file"]),
+.admin-dashboard select,
+.admin-dashboard textarea {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.admin-dashboard input:focus-visible,
+.admin-dashboard select:focus-visible,
+.admin-dashboard textarea:focus-visible {
+  border-color: #1d4ed8;
+  outline: none;
+  box-shadow: 0 0 0 3px rgb(59 130 246 / 0.14);
+}
+
+.admin-dashboard textarea {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.admin-dashboard article,
+.admin-dashboard form,
+.admin-dashboard details {
+  box-shadow: 0 1px 3px rgb(15 23 42 / 0.05);
+}
+
+.admin-dashboard summary::-webkit-details-marker {
+  display: none;
+}
+
+.text-blue-900 {
+  color: #082e67;
+}
+
+.bg-blue-900 {
+  background-color: #082e67;
+}
+
+.border-blue-900\/20 {
+  border-color: rgb(22 116 209 / 0.20);
+}
+
+.building-hero-overlay {
+  background:
+    linear-gradient(90deg, rgba(15, 23, 42, 0.88) 0%, rgba(15, 23, 42, 0.58) 42%, rgba(14, 116, 144, 0.14) 72%, rgba(8, 145, 178, 0.04) 100%),
+    linear-gradient(0deg, rgba(15, 23, 42, 0.58) 0%, transparent 35%);
+}
+
+@media (max-width: 767px) {
+  .building-hero-overlay {
+    background:
+      linear-gradient(90deg, rgba(15, 23, 42, 0.86) 0%, rgba(15, 23, 42, 0.68) 100%),
+      linear-gradient(0deg, rgba(15, 23, 42, 0.72) 0%, transparent 38%);
+  }
 }
