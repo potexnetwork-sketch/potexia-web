@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     description: "Solusi jaringan, managed IT service, CCTV, aplikasi kasir, dan website yang disesuaikan untuk kebutuhan bisnis.",
     images: [
       {
-        url: "/logo-transparent.png",
+        url: "/favicon.ico",
         width: 1615,
         height: 528,
         alt: "POTEXIA Data & Technology Solutions",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "POTEXIA | Solusi Jaringan & Teknologi untuk Bisnis",
     description: "Solusi jaringan, managed IT service, CCTV, aplikasi kasir, dan website untuk bisnis.",
-    images: ["/logo-transparent.png"],
+    images: ["/favicon.ico"],
   },
   robots: {
     index: true,
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/logo-transparent.png",
+    icon: "/favicon.ico",
   },
 };
 
