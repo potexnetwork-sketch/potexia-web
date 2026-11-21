@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://potexia.my.id"),
+  metadataBase: new URL("https://potexia.web.id"),
   title: {
     default: "POTEXIA | Solusi Jaringan & Teknologi untuk Bisnis",
     template: "%s | POTEXIA",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://potexia.my.id",
+    url: "https://potexia.web.id",
     siteName: "POTEXIA",
     title: "POTEXIA | Solusi Jaringan & Teknologi untuk Bisnis",
     description: "Solusi jaringan, managed IT service, CCTV, aplikasi kasir, dan website yang disesuaikan untuk kebutuhan bisnis.",

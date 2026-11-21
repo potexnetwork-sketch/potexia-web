@@ -7,7 +7,7 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/admin", "/admin/"],
     },
-    sitemap: "https://potexia.my.id/sitemap.xml",
-    host: "https://potexia.my.id",
+    sitemap: "https://potexia.web.id/sitemap.xml",
+    host: "https://potexia.web.id",
   };
 }

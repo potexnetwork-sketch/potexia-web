@@ -26,9 +26,9 @@ export default async function Home({
     "@type": "ProfessionalService",
     name: settings.brand_name,
     description: settings.tagline,
-    url: "https://potexia.my.id",
-    logo: "https://potexia.my.id/logo-transparent.png",
-    image: "https://potexia.my.id/logo-transparent.png",
+    url: "https://potexia.web.id",
+    logo: "https://potexia.web.id/logo-transparent.png",
+    image: "https://potexia.web.id/logo-transparent.png",
     email: settings.email,
     telephone: settings.phone_display,
     address: {

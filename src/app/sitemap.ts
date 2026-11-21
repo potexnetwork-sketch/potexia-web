@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const siteUrl = "https://potexia.my.id";
+const siteUrl = "https://potexia.web.id";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
